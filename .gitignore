@@ -1,0 +1,34 @@
+# Compiled class files
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven / Gradle folders
+/target/
+/build/
+
+# IntelliJ IDEA project files
+/.idea/
+/*.iml
+
+# Eclipse project files
+/.classpath
+/.project
+/.settings/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TestNG reports
+/test-output/
+
+# Selenium screenshots (optional)
+/screenshots/
+
+# Environment/config files
+.env

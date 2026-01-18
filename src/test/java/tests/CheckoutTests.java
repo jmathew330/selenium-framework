@@ -46,7 +46,7 @@ public class CheckoutTests extends BaseTest {
     )
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test completes the full checkout flow for a single product and verifies the final confirmation message")
-    public void verifyCompleteCheckoutE2EFlow(String firstName, String lastName, String zip) {
+    public void verifyCompleteCheckoutFlow(String firstName, String lastName, String zip) {
 
         log.info("===== START TEST: verifyCompleteCheckoutFlow =====");
 

@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 18 11:27:34 EST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>378 seconds (378042 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ProductsTests.verifyRemoveMultipleItemsFromCart()'><b>verifyRemoveMultipleItemsFromCart</b><br>Test class: tests.ProductsTests<br>Test method: Add multiple products to cart and remove them all, then verify cart is empty</td>
+<td></td>
+<td>1</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifySingleProductBadgeCount()'><b>verifySingleProductBadgeCount</b><br>Test class: tests.ProductsTests<br>Test method: Add single product to cart and verify badge count updates</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyProductsAppearInCart()'><b>verifyProductsAppearInCart</b><br>Test class: tests.ProductsTests<br>Test method: Add multiple products to cart and verify they appear in the cart</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyRemoveSingleProductFromCart()'><b>verifyRemoveSingleProductFromCart</b><br>Test class: tests.ProductsTests<br>Test method: Add product to cart and remove it, then verify cart is empty</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifySortByNameAToZ()'><b>verifySortByNameAToZ</b><br>Test class: tests.ProductsTests<br>Test method: Sort products by name from A to Z and verify order</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyProductNames()'><b>verifyProductNames</b><br>Test class: tests.ProductsTests<br>Test method: Check that specific product names exist on the inventory page</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifySortByPriceLowToHigh()'><b>verifySortByPriceLowToHigh</b><br>Test class: tests.ProductsTests<br>Test method: Sort products by price from low to high and verify order</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyMultipleProductsBadgeCount()'><b>verifyMultipleProductsBadgeCount</b><br>Test class: tests.ProductsTests<br>Test method: Add multiple products to cart and verify badge count updates</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyInventoryPageLoads()'><b>verifyInventoryPageLoads</b><br>Test class: tests.ProductsTests<br>Test method: Check that inventory page URL contains 'inventory'</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifySortByPriceHighToLow()'><b>verifySortByPriceHighToLow</b><br>Test class: tests.ProductsTests<br>Test method: Sort products by price from high to low and verify order</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyProductsAreDisplayed()'><b>verifyProductsAreDisplayed</b><br>Test class: tests.ProductsTests<br>Test method: Check that products are displayed on the inventory page</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifyProductPrices()'><b>verifyProductPrices</b><br>Test class: tests.ProductsTests<br>Test method: Check that product prices are displayed correctly</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifySortByNameZToA()'><b>verifySortByNameZToA</b><br>Test class: tests.ProductsTests<br>Test method: Sort products by name from Z to A and verify order</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+<tr>
+<td title='tests.ProductsTests.verifySingleProductAppearsInCart()'><b>verifySingleProductAppearsInCart</b><br>Test class: tests.ProductsTests<br>Test method: Add a product to cart and verify it appears in the cart</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductsTests@2cf92cc7</td></tr>
+</table><p>
+</body>
+</html>

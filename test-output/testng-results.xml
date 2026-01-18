@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-18T11:27:34 EST" name="Default suite" finished-at="2026-01-18T11:33:52 EST" duration-ms="378042">
+    <groups>
+    </groups>
+    <test started-at="2026-01-18T11:27:34 EST" name="Default test" finished-at="2026-01-18T11:33:52 EST" duration-ms="378042">
+      <class name="tests.ProductsTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:27:34 EST" name="setup" finished-at="2026-01-18T11:28:04 EST" duration-ms="29125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:04 EST" name="loginToInventory" finished-at="2026-01-18T11:28:05 EST" duration-ms="847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyInventoryPageLoads()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:05 EST" name="verifyInventoryPageLoads" description="Check that inventory page URL contains &#039;inventory&#039;" finished-at="2026-01-18T11:28:05 EST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInventoryPageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:05 EST" name="tearDown" finished-at="2026-01-18T11:28:06 EST" duration-ms="952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:06 EST" name="setup" finished-at="2026-01-18T11:28:28 EST" duration-ms="22101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:28 EST" name="loginToInventory" finished-at="2026-01-18T11:28:29 EST" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyMultipleProductsBadgeCount()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:29 EST" name="verifyMultipleProductsBadgeCount" description="Add multiple products to cart and verify badge count updates" finished-at="2026-01-18T11:28:29 EST" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultipleProductsBadgeCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:29 EST" name="tearDown" finished-at="2026-01-18T11:28:30 EST" duration-ms="875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:30 EST" name="setup" finished-at="2026-01-18T11:28:52 EST" duration-ms="21426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:52 EST" name="loginToInventory" finished-at="2026-01-18T11:28:53 EST" duration-ms="943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyProductNames()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:53 EST" name="verifyProductNames" description="Check that specific product names exist on the inventory page" finished-at="2026-01-18T11:28:53 EST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductNames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:53 EST" name="tearDown" finished-at="2026-01-18T11:28:54 EST" duration-ms="1168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:28:54 EST" name="setup" finished-at="2026-01-18T11:29:18 EST" duration-ms="23803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:18 EST" name="loginToInventory" finished-at="2026-01-18T11:29:19 EST" duration-ms="951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyProductPrices()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:19 EST" name="verifyProductPrices" description="Check that product prices are displayed correctly" finished-at="2026-01-18T11:29:19 EST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductPrices -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:19 EST" name="tearDown" finished-at="2026-01-18T11:29:20 EST" duration-ms="884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:20 EST" name="setup" finished-at="2026-01-18T11:29:42 EST" duration-ms="22767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:42 EST" name="loginToInventory" finished-at="2026-01-18T11:29:43 EST" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyProductsAppearInCart()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:43 EST" name="verifyProductsAppearInCart" description="Add multiple products to cart and verify they appear in the cart" finished-at="2026-01-18T11:29:44 EST" duration-ms="877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsAppearInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:44 EST" name="tearDown" finished-at="2026-01-18T11:29:45 EST" duration-ms="900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:29:45 EST" name="setup" finished-at="2026-01-18T11:30:13 EST" duration-ms="27730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:13 EST" name="loginToInventory" finished-at="2026-01-18T11:30:14 EST" duration-ms="945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyProductsAreDisplayed()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:14 EST" name="verifyProductsAreDisplayed" description="Check that products are displayed on the inventory page" finished-at="2026-01-18T11:30:14 EST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsAreDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:14 EST" name="tearDown" finished-at="2026-01-18T11:30:15 EST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:15 EST" name="setup" finished-at="2026-01-18T11:30:39 EST" duration-ms="23865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:39 EST" name="loginToInventory" finished-at="2026-01-18T11:30:39 EST" duration-ms="779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyRemoveMultipleItemsFromCart()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:39 EST" name="verifyRemoveMultipleItemsFromCart" description="Add multiple products to cart and remove them all, then verify cart is empty" finished-at="2026-01-18T11:30:41 EST" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveMultipleItemsFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:41 EST" name="tearDown" finished-at="2026-01-18T11:30:42 EST" duration-ms="878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:30:42 EST" name="setup" finished-at="2026-01-18T11:31:07 EST" duration-ms="25884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:07 EST" name="loginToInventory" finished-at="2026-01-18T11:31:09 EST" duration-ms="1104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifyRemoveSingleProductFromCart()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:09 EST" name="verifyRemoveSingleProductFromCart" description="Add product to cart and remove it, then verify cart is empty" finished-at="2026-01-18T11:31:09 EST" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRemoveSingleProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:09 EST" name="tearDown" finished-at="2026-01-18T11:31:11 EST" duration-ms="1341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:11 EST" name="setup" finished-at="2026-01-18T11:31:35 EST" duration-ms="24142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:35 EST" name="loginToInventory" finished-at="2026-01-18T11:31:36 EST" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifySingleProductAppearsInCart()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:36 EST" name="verifySingleProductAppearsInCart" description="Add a product to cart and verify it appears in the cart" finished-at="2026-01-18T11:31:36 EST" duration-ms="569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleProductAppearsInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:36 EST" name="tearDown" finished-at="2026-01-18T11:31:37 EST" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:37 EST" name="setup" finished-at="2026-01-18T11:31:59 EST" duration-ms="21641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:31:59 EST" name="loginToInventory" finished-at="2026-01-18T11:32:00 EST" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifySingleProductBadgeCount()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:00 EST" name="verifySingleProductBadgeCount" description="Add single product to cart and verify badge count updates" finished-at="2026-01-18T11:32:00 EST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySingleProductBadgeCount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:00 EST" name="tearDown" finished-at="2026-01-18T11:32:01 EST" duration-ms="888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:01 EST" name="setup" finished-at="2026-01-18T11:32:21 EST" duration-ms="20510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:21 EST" name="loginToInventory" finished-at="2026-01-18T11:32:23 EST" duration-ms="1221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifySortByNameAToZ()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:23 EST" name="verifySortByNameAToZ" description="Sort products by name from A to Z and verify order" finished-at="2026-01-18T11:32:23 EST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortByNameAToZ -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:23 EST" name="tearDown" finished-at="2026-01-18T11:32:24 EST" duration-ms="1134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:24 EST" name="setup" finished-at="2026-01-18T11:32:49 EST" duration-ms="24692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:49 EST" name="loginToInventory" finished-at="2026-01-18T11:32:50 EST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifySortByNameZToA()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:50 EST" name="verifySortByNameZToA" description="Sort products by name from Z to A and verify order" finished-at="2026-01-18T11:32:50 EST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortByNameZToA -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:50 EST" name="tearDown" finished-at="2026-01-18T11:32:51 EST" duration-ms="939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:32:51 EST" name="setup" finished-at="2026-01-18T11:33:23 EST" duration-ms="32236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:23 EST" name="loginToInventory" finished-at="2026-01-18T11:33:24 EST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifySortByPriceHighToLow()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:24 EST" name="verifySortByPriceHighToLow" description="Sort products by price from high to low and verify order" finished-at="2026-01-18T11:33:25 EST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortByPriceHighToLow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:25 EST" name="tearDown" finished-at="2026-01-18T11:33:26 EST" duration-ms="1272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:26 EST" name="setup" finished-at="2026-01-18T11:33:50 EST" duration-ms="23916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="loginToInventory()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:50 EST" name="loginToInventory" finished-at="2026-01-18T11:33:51 EST" duration-ms="1087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToInventory -->
+        <test-method signature="verifySortByPriceLowToHigh()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:51 EST" name="verifySortByPriceLowToHigh" description="Sort products by price from low to high and verify order" finished-at="2026-01-18T11:33:51 EST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySortByPriceLowToHigh -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductsTests@2cf92cc7]" started-at="2026-01-18T11:33:51 EST" name="tearDown" finished-at="2026-01-18T11:33:52 EST" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductsTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

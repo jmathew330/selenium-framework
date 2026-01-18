@@ -1,0 +1,104 @@
+2026-01-15 13:56:12 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:23 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:24 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:25 INFO  tests.LoginTests - ===== START TEST: verifyEmptyPasswordLogin =====
+2026-01-15 13:56:25 INFO  pages.LoginPage - Attempting login with username: some_username
+2026-01-15 13:56:26 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:26 WARN  pages.LoginPage - Login error message displayed: Epic sadface: Password is required
+2026-01-15 13:56:26 INFO  tests.LoginTests - Empty password validation verified successfully
+2026-01-15 13:56:26 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:26 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:28 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:30 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:30 INFO  tests.LoginTests - ===== START TEST: verifyEmptyUsernameLogin =====
+2026-01-15 13:56:30 INFO  pages.LoginPage - Attempting login with username: 
+2026-01-15 13:56:31 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:31 WARN  pages.LoginPage - Login error message displayed: Epic sadface: Username is required
+2026-01-15 13:56:31 INFO  tests.LoginTests - Empty username validation verified successfully
+2026-01-15 13:56:31 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:31 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:32 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:35 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:35 INFO  tests.LoginTests - ===== START TEST: verifyInvalidLogin =====
+2026-01-15 13:56:35 INFO  pages.LoginPage - Attempting login with username: invalid_username
+2026-01-15 13:56:35 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:35 WARN  pages.LoginPage - Login error message displayed: Epic sadface: Username and password do not match any user in this service
+2026-01-15 13:56:35 INFO  tests.LoginTests - Invalid user error message validated successfully
+2026-01-15 13:56:35 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:36 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:37 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:39 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:40 INFO  tests.LoginTests - ===== START TEST: verifyLockedOutLogin FOR USER locked_out_user =====
+2026-01-15 13:56:40 INFO  pages.LoginPage - Attempting login with username: locked_out_user
+2026-01-15 13:56:40 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:40 WARN  tests.LoginTests - Expecting locked-out error message for user: locked_out_user
+2026-01-15 13:56:40 WARN  pages.LoginPage - Login error message displayed: Epic sadface: Sorry, this user has been locked out.
+2026-01-15 13:56:40 INFO  tests.LoginTests - Locked-out user behavior validated successfully for user: locked_out_user
+2026-01-15 13:56:40 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:40 INFO  tests.LoginTests - Loading valid users from login test data
+2026-01-15 13:56:40 INFO  tests.LoginTests - Total valid users loaded: 5
+2026-01-15 13:56:40 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:42 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:44 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:44 INFO  tests.LoginTests - ===== START TEST: verifyValidLogin FOR USER standard_user =====
+2026-01-15 13:56:44 INFO  pages.LoginPage - Attempting login with username: standard_user
+2026-01-15 13:56:45 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:45 INFO  pages.InventoryPage - Waiting for inventory page to load
+2026-01-15 13:56:45 INFO  pages.InventoryPage - Inventory page loaded successfully
+2026-01-15 13:56:45 INFO  tests.LoginTests - Valid login verified successfully for user: standard_user
+2026-01-15 13:56:45 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:45 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:47 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:48 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:49 INFO  tests.LoginTests - ===== START TEST: verifyValidLogin FOR USER problem_user =====
+2026-01-15 13:56:49 INFO  pages.LoginPage - Attempting login with username: problem_user
+2026-01-15 13:56:49 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:49 INFO  pages.InventoryPage - Waiting for inventory page to load
+2026-01-15 13:56:49 INFO  pages.InventoryPage - Inventory page loaded successfully
+2026-01-15 13:56:50 INFO  tests.LoginTests - Valid login verified successfully for user: problem_user
+2026-01-15 13:56:50 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:50 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:56:51 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:56:53 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:56:53 INFO  tests.LoginTests - ===== START TEST: verifyValidLogin FOR USER performance_glitch_user =====
+2026-01-15 13:56:53 INFO  pages.LoginPage - Attempting login with username: performance_glitch_user
+2026-01-15 13:56:59 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:56:59 INFO  pages.InventoryPage - Waiting for inventory page to load
+2026-01-15 13:56:59 INFO  pages.InventoryPage - Inventory page loaded successfully
+2026-01-15 13:56:59 INFO  tests.LoginTests - Valid login verified successfully for user: performance_glitch_user
+2026-01-15 13:56:59 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:56:59 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:57:01 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:57:03 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:57:03 INFO  tests.LoginTests - ===== START TEST: verifyValidLogin FOR USER error_user =====
+2026-01-15 13:57:03 INFO  pages.LoginPage - Attempting login with username: error_user
+2026-01-15 13:57:04 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:57:04 INFO  pages.InventoryPage - Waiting for inventory page to load
+2026-01-15 13:57:04 INFO  pages.InventoryPage - Inventory page loaded successfully
+2026-01-15 13:57:04 INFO  tests.LoginTests - Valid login verified successfully for user: error_user
+2026-01-15 13:57:04 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:57:04 INFO  tests.LoginTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:57:06 INFO  tests.LoginTests - Launching browser: edge
+2026-01-15 13:57:07 INFO  tests.LoginTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:57:08 INFO  tests.LoginTests - ===== START TEST: verifyValidLogin FOR USER visual_user =====
+2026-01-15 13:57:08 INFO  pages.LoginPage - Attempting login with username: visual_user
+2026-01-15 13:57:09 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:57:09 INFO  pages.InventoryPage - Waiting for inventory page to load
+2026-01-15 13:57:09 INFO  pages.InventoryPage - Inventory page loaded successfully
+2026-01-15 13:57:09 INFO  tests.LoginTests - Valid login verified successfully for user: visual_user
+2026-01-15 13:57:09 INFO  tests.LoginTests - Closing browser
+2026-01-15 13:59:13 INFO  tests.ProductsTests - ========== TEST SETUP STARTED ==========
+2026-01-15 13:59:16 INFO  tests.ProductsTests - Launching browser: edge
+2026-01-15 13:59:18 INFO  tests.ProductsTests - Navigating to url: https://www.saucedemo.com/
+2026-01-15 13:59:18 INFO  tests.ProductsTests - Logging in before inventory tests
+2026-01-15 13:59:19 INFO  pages.LoginPage - Attempting login with username: standard_user
+2026-01-15 13:59:19 INFO  pages.LoginPage - Login button clicked
+2026-01-15 13:59:19 INFO  pages.InventoryPage - Waiting for inventory page to load
+2026-01-15 13:59:19 INFO  pages.InventoryPage - Inventory page loaded successfully
+2026-01-15 13:59:19 INFO  pages.InventoryPage - Adding first product to cart
+2026-01-15 13:59:19 INFO  pages.InventoryPage - Fetching badge count
+2026-01-15 13:59:19 INFO  pages.InventoryPage - Navigating to cart
+2026-01-15 13:59:19 INFO  pages.CartPage - Fetching cart item count: 1
+2026-01-15 13:59:19 INFO  pages.CartPage - Removing first item from cart
+2026-01-15 13:59:19 INFO  pages.CartPage - Fetching cart item count: 0
+2026-01-15 13:59:19 INFO  tests.ProductsTests - Closing browser

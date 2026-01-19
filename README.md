@@ -19,36 +19,36 @@ This project automates core user flows including **login, product inventory, car
 ---
 
 ## 📂 Project Structure
-``
-src
-├── main
-│   ├── java
-│   │   ├── base
-│   │   │   ├── BaseTest.java
-│   │   │   └── BasePage.java
-│   │   ├── pages
-│   │   │   ├── LoginPage.java
-│   │   │   ├── InventoryPage.java
-│   │   │   ├── CartPage.java
-│   │   │   ├── CheckoutInfoPage.java
-│   │   │   ├── CheckoutOverviewPage.java
-│   │   │   └── CheckoutCompletePage.java
-│   │   └── utils
-│   │       ├── ConfigReader.java
-│   │       └── LoginTestDataReader.java
-│
-├── test
-│   └── java
-│       └── tests
-│           ├── LoginTests.java
-│           ├── ProductsTests.java
-│           └── CheckoutTests.java
-│
-└── resources
-    ├── config.properties
-    └── testdata
 
-    ``
+```
+src/
+├─ main/
+│  ├─ java/
+│  │  ├─ base/
+│  │  │  ├─ BaseTest.java
+│  │  │  └─ BasePage.java
+│  │  ├─ pages/
+│  │  │  ├─ LoginPage.java
+│  │  │  ├─ InventoryPage.java
+│  │  │  ├─ CartPage.java
+│  │  │  ├─ CheckoutInfoPage.java
+│  │  │  ├─ CheckoutOverviewPage.java
+│  │  │  └─ CheckoutCompletePage.java
+│  │  └─ utils/
+│  │     ├─ ConfigReader.java
+│  │     └─ LoginTestDataReader.java
+│
+├─ test/
+│  └─ java/
+│     └─ tests/
+│        ├─ LoginTests.java
+│        ├─ ProductsTests.java
+│        └─ CheckoutTests.java
+│
+└─ resources/
+   ├─ config.properties
+   └─ testdata/
+```
 ---
 
 ## 🧠 Framework Design Highlights

@@ -19,7 +19,7 @@ This project automates core user flows including **login, product inventory, car
 ---
 
 ## 📂 Project Structure
-
+``
 src
 ├── main
 │   ├── java
@@ -47,6 +47,8 @@ src
 └── resources
     ├── config.properties
     └── testdata
+
+    ``
 ---
 
 ## 🧠 Framework Design Highlights

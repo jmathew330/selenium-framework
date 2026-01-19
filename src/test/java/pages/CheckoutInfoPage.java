@@ -29,6 +29,9 @@ public class CheckoutInfoPage extends BasePage {
 
     @FindBy(id = "continue")
     private WebElement continueButton;
+    
+    @FindBy(xpath="//h3[@data-test='error']")
+    private WebElement errorMessage;
 
     // ------------------------------------------
     // Form Input Methods
@@ -58,6 +61,11 @@ public class CheckoutInfoPage extends BasePage {
     public void clickContinue() {
         log.info("Continuing checkout");
         continueButton.click();
+    }
+    
+    
+    public String getErrorMessageText() {
+    	return errorMessage.getText();
     }
 
 }

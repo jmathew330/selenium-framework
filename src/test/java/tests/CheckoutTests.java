@@ -21,13 +21,13 @@ public class CheckoutTests extends BaseTest {
     // Test Setup
     // ------------------------------------------
     @BeforeMethod
-    @Description("Logs in as a default product user, adds a product to the cart, and navigates to the checkout page")
-    public void loginToInventory() {
-        log.info("Logging in and adding product before checkout tests");
+    @Description("Logs in, adds a product to the cart, and navigates to the checkout page before each test")
+    public void setupCheckout() {
+        log.info("Logging in and preparing checkout state");
 
         loginPage.login(
-                LoginTestDataReader.get("defaultProductUser"),
-                LoginTestDataReader.get("validPassword")
+            LoginTestDataReader.get("defaultProductUser"),
+            LoginTestDataReader.get("validPassword")
         );
 
         inventoryPage.waitForInventoryPage();
@@ -37,12 +37,12 @@ public class CheckoutTests extends BaseTest {
     }
 
     // ------------------------------------------
-    // Checkout Flow Test
+    // Checkout Flow Tests
     // ------------------------------------------
     @Story("Verify complete checkout flow for single product")
     @Test(
-            description = "Complete checkout flow: fill information, review overview, and finish checkout",
-            dataProvider = "formData"
+        description = "Complete checkout flow: fill information, review overview, and finish checkout",
+        dataProvider = "checkoutInfo"
     )
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test completes the full checkout flow for a single product and verifies the final confirmation message")
@@ -56,33 +56,99 @@ public class CheckoutTests extends BaseTest {
         // Continue to overview page
         checkoutInfoPage.clickContinue();
 
-        // Assert items appear on overview page
+        // Verify item appears on overview page
         Assert.assertTrue(
-                checkoutOverviewPage.getOverviewItemCount() > 0,
-                "No items displayed on checkout overview page"
+            checkoutOverviewPage.getOverviewItemCount() > 0,
+            "No items displayed on checkout overview page"
         );
 
         // Finish checkout
         checkoutOverviewPage.clickFinish();
 
-        // Assert final confirmation text
+        // Verify final confirmation message
         Assert.assertEquals(
-                checkoutCompletePage.getCompleteHeaderText(),
-                "Thank you for your order!",
-                "Checkout completion message mismatch"
+            checkoutCompletePage.getCompleteHeaderText(),
+            "Thank you for your order!",
+            "Checkout completion message mismatch"
         );
 
         log.info("Checkout flow completed successfully");
     }
 
     // ------------------------------------------
-    // Data Providers
+    // Validation Tests
     // ------------------------------------------
-    @DataProvider(name = "formData")
-    public Object[][] formData() {
-        return new Object[][]{
-                {"Jeffin", "Mathew", "11040"}
-        };
+    @Story("Verify checkout validation error for missing first name")
+    @Test(description = "Verify validation error when first name is missing during checkout")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test verifies that an error message is displayed when first name is not provided")
+    public void verifyFirstNameMissingValidationError() {
+
+        log.info("===== START TEST: verifyFirstNameMissingValidationError =====");
+
+        // Submit checkout form with missing first name
+        checkoutInfoPage.fillOutForm("", "LastNameQA", "12345");
+        checkoutInfoPage.clickContinue();
+
+        // Verify validation error message
+        Assert.assertTrue(
+            checkoutInfoPage.getErrorMessageText().contains("Error: First Name is required"),
+            "Expected validation error for missing first name was not displayed"
+        );
+        
+        log.info("Checkout validation error displayed: {}", checkoutInfoPage.getErrorMessageText());
+    }
+    
+    @Story("Verify checkout validation error for missing last name")
+    @Test(description = "Verify validation error when last name is missing during checkout")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test verifies that an error message is displayed when last name is not provided")
+    public void verifyLastNameMissingValidationError() {
+
+        log.info("===== START TEST: verifyLastNameMissingValidationError =====");
+
+        // Submit checkout form with missing last name
+        checkoutInfoPage.fillOutForm("FirstNameQA", "", "12345");
+        checkoutInfoPage.clickContinue();
+
+        // Verify validation error message
+        Assert.assertTrue(
+            checkoutInfoPage.getErrorMessageText().contains("Error: Last Name is required"),
+            "Expected validation error for missing last name was not displayed"
+        );
+        
+        log.info("Checkout validation error displayed: {}", checkoutInfoPage.getErrorMessageText());
+    }
+    
+    
+    @Story("Verify checkout validation error for missing zip code")
+    @Test(description = "Verify validation error when zip code is missing during checkout")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Test verifies that an error message is displayed when zip code is not provided")
+    public void verifyZipCodeMissingValidationError() {
+
+        log.info("===== START TEST: verifyZipCodeMissingValidationError =====");
+
+        // Submit checkout form with missing last name
+        checkoutInfoPage.fillOutForm("FirstNameQA", "LastNameQA", "");
+        checkoutInfoPage.clickContinue();
+
+        // Verify validation error message
+        Assert.assertTrue(
+            checkoutInfoPage.getErrorMessageText().contains("Error: Postal Code is required"),
+            "Expected validation error for missing zip code was not displayed"
+        );
+        
+        log.info("Checkout validation error displayed: {}", checkoutInfoPage.getErrorMessageText());
     }
 
+    // ------------------------------------------
+    // Data Providers
+    // ------------------------------------------
+    @DataProvider(name = "checkoutInfo")
+    public Object[][] checkoutFormData() {
+        return new Object[][]{
+            {"Jeffin", "Mathew", "11040"}
+        };
+    }
 }

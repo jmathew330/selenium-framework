@@ -72,6 +72,7 @@ public class BaseTest {
                 if (headless) {
                     chromeOptions.addArguments("--headless=new");
                 }
+                chromeOptions.addArguments("--guest");
                 driver = new ChromeDriver(chromeOptions);
                 break;
 

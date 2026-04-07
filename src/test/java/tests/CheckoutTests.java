@@ -25,14 +25,22 @@ public class CheckoutTests extends BaseTest {
     public void setupCheckout() {
         log.info("Logging in and preparing checkout state");
 
+        // Login using valid test credentials
         loginPage.login(
             LoginTestDataReader.get("defaultProductUser"),
             LoginTestDataReader.get("validPassword")
         );
 
+        // Wait for inventory page to load
         inventoryPage.waitForInventoryPage();
+
+        // Add first available product to cart
         inventoryPage.addFirstItemToCart();
+
+        // Navigate to cart page
         inventoryPage.openCart();
+
+        // Proceed to checkout
         cartPage.goToCheckout();
     }
 
@@ -50,22 +58,22 @@ public class CheckoutTests extends BaseTest {
 
         log.info("===== START TEST: verifyCompleteCheckoutFlow =====");
 
-        // Fill out checkout information
+        // Fill out checkout information form
         checkoutInfoPage.fillOutForm(firstName, lastName, zip);
 
-        // Continue to overview page
+        // Continue to checkout overview page
         checkoutInfoPage.clickContinue();
 
-        // Verify item appears on overview page
+        // Verify at least one item appears on overview page
         Assert.assertTrue(
             checkoutOverviewPage.getOverviewItemCount() > 0,
             "No items displayed on checkout overview page"
         );
 
-        // Finish checkout
+        // Complete checkout process
         checkoutOverviewPage.clickFinish();
 
-        // Verify final confirmation message
+        // Verify final confirmation header message
         Assert.assertEquals(
             checkoutCompletePage.getCompleteHeaderText(),
             "Thank you for your order!",
@@ -90,7 +98,7 @@ public class CheckoutTests extends BaseTest {
         checkoutInfoPage.fillOutForm("", "LastNameQA", "12345");
         checkoutInfoPage.clickContinue();
 
-        // Verify validation error message
+        // Verify correct validation error message is displayed
         Assert.assertTrue(
             checkoutInfoPage.getErrorMessageText().contains("Error: First Name is required"),
             "Expected validation error for missing first name was not displayed"
@@ -111,7 +119,7 @@ public class CheckoutTests extends BaseTest {
         checkoutInfoPage.fillOutForm("FirstNameQA", "", "12345");
         checkoutInfoPage.clickContinue();
 
-        // Verify validation error message
+        // Verify correct validation error message is displayed
         Assert.assertTrue(
             checkoutInfoPage.getErrorMessageText().contains("Error: Last Name is required"),
             "Expected validation error for missing last name was not displayed"
@@ -119,7 +127,6 @@ public class CheckoutTests extends BaseTest {
         
         log.info("Checkout validation error displayed: {}", checkoutInfoPage.getErrorMessageText());
     }
-    
     
     @Story("Verify checkout validation error for missing zip code")
     @Test(description = "Verify validation error when zip code is missing during checkout")
@@ -129,17 +136,47 @@ public class CheckoutTests extends BaseTest {
 
         log.info("===== START TEST: verifyZipCodeMissingValidationError =====");
 
-        // Submit checkout form with missing last name
+        // Submit checkout form with missing zip code
         checkoutInfoPage.fillOutForm("FirstNameQA", "LastNameQA", "");
         checkoutInfoPage.clickContinue();
 
-        // Verify validation error message
+        // Verify correct validation error message is displayed
         Assert.assertTrue(
             checkoutInfoPage.getErrorMessageText().contains("Error: Postal Code is required"),
             "Expected validation error for missing zip code was not displayed"
         );
         
         log.info("Checkout validation error displayed: {}", checkoutInfoPage.getErrorMessageText());
+    }
+    
+    // ------------------------------------------
+    // Checkout Calculations Tests
+    // ------------------------------------------
+    @Test(dataProvider = "checkoutInfo")
+    public void verifyCheckoutTotalsMath(String firstName, String lastName, String zip) {
+    	
+        log.info("===== START TEST: verifyCheckoutTotalsMath =====");
+        
+        // Fill out checkout information
+        checkoutInfoPage.fillOutForm(firstName, lastName, zip);
+
+        // Continue to overview page
+        checkoutInfoPage.clickContinue();
+        
+        // Retrieve item subtotal from overview
+        double itemTotal = checkoutOverviewPage.getItemTotal();
+        
+        // Retrieve tax amount from overview
+        double itemTax = checkoutOverviewPage.getItemTax();
+        
+        // Retrieve displayed total amount
+        double actualTotal = checkoutOverviewPage.getTotal();
+        
+        // Calculate expected total (items + tax)
+        double expectedTotal = itemTotal + itemTax;
+        
+        // Verify displayed total matches calculated total
+        Assert.assertEquals(actualTotal, expectedTotal);
     }
 
     // ------------------------------------------
